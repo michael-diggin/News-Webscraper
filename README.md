@@ -1,7 +1,6 @@
 # News-Webscraper
 ```bash
 A coding project to do a bit of Webscraping. The top headlines from BBC news (www.bbc.co.uk/news) are displayed in a tkinter GUI as a hyperlink. 
-Simply run NewsApp.py and a GUI will pop up.
 ```
 ### Updates(in the works...)
 ```bash  
