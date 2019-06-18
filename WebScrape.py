@@ -26,8 +26,7 @@ class WebScrape():
         content = soup.find('div', {"class": self.article_tag})
         
         #sometimes the first headline has 2/3 related links to other closely related articles
-        related = soup.find('div', {"class": self.related_tag})
-        
+        related = soup.find('div', {"class": self.related_tag})        
         try:
             related_links = []  
             for link in related.find_all('a'):
@@ -38,8 +37,7 @@ class WebScrape():
             
         weblinks = []
 
-        #list of links to articles
-        
+        #list of links to articles        
         try:
             for link in content.find_all('a'):
                 if not self.website + link.get('href') in weblinks:
@@ -47,7 +45,8 @@ class WebScrape():
                         weblinks.append(self.website + link.get('href'))
         except:
             print("Error: Cannot find the links")
-                    
+        
+        #this is currently specific to bbc news           
         for link in weblinks:
             if not link[-1] in '0123456789':
                 weblinks.remove(link)
@@ -57,7 +56,8 @@ class WebScrape():
         for title in content.find_all('h3'):
             if not title.text in titles:
                 titles.append(title.text)
-                    
+                
+        #return a dictionary of the headlines and links            
         articles = dict(zip(titles, weblinks))
         return articles
         

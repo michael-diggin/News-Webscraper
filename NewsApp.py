@@ -8,6 +8,7 @@ Created on Mon Jun 10 10:05:37 2019
 from WebScrape import WebScrape
 from Interface import Interface
 
+#load in BBC articles
 bbc = WebScrape()
 bbc.url = 'https://www.bbc.co.uk/news'
 bbc.article_tag = 'gel-layout gel-layout--equal nw-c-top-stories--standard nw-c-top-stories--domestic'
@@ -19,4 +20,7 @@ ui = Interface(articles)
 ui.title = 'Top Stories'
 ui.site = 'BBC'
 
+#display
 ui.display_interface()
+
+
