@@ -1,5 +1,15 @@
 # News-Webscraper
+```bash
+A coding project to do a bit of Webscraping. The top headlines from BBC news (www.bbc.co.uk/news) are displayed in a tkinter GUI as a hyperlink. 
+Simply run NewsApp.py and a GUI will pop up.
+```
+### Updates(in the works...)
+```bash  
+-Planning on adding a weather page to give an overview of the weather for the day. 
+-Adding one or more other news sources.
+```
 
-Python code to scrape BBC news and display the top stories in a tkinter generated GUI. In the process of updating the code so that it works for other news websites too. 
-Code for tkHyperlinkManager.py is from http://effbot.org/zone/tkinter-text-hyperlink.htm
-
+### Requirements 
+```bash
+Python 3+, tkinter (obvs), requests, webbroswer
+```
