@@ -10,5 +10,5 @@ A coding project to do a bit of Webscraping. The top headlines from BBC news (ww
 
 ### Requirements 
 ```bash
-Python 3+, tkinter (obvs), requests, webbroswer
+Python 3+, tkinter, requests, webbroswer
 ```
